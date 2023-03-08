@@ -1,0 +1,13 @@
+body {
+    background-image: url(../img/bigtreno);
+}
+
+.style {
+    width: 60%;
+    margin: 250px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(227, 203, 159, 0.6);
+    border: 2px dotted rgb(222, 181, 115);
+    border-radius: 20px;
+}
