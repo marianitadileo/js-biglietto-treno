@@ -12,19 +12,21 @@ let discountOver = "";
 let reducedPrice = ""; 
 
 if(ageUser < 18) {
-    discountJunior = "0.02";
+    discountJunior = 0.02;
     reducedPrice = priceJourney - discountJunior; 
-    console.log(reducedPrice.toFixed(2));
-    document.getElementById('price').innerHTML = "Il costo del biglietto sarà " + reducedPrice;
+    reducedPrice = reducedPrice.toFixed(2); 
+    console.log(reducedPrice);
+    document.getElementById('price').innerHTML = "Il costo del biglietto sarà " + reducedPrice + "€";
 } else if (ageUser > 65) {
-    discountOver = "0.4";
+    discountOver = 0.4;
     reducedPrice = priceJourney - discountOver;
-    console.log(reducedPrice.toFixed(2));
-    document.getElementById('price').innerHTML = "Il costo del biglietto sarà " + reducedPrice;
+    reducedPrice = reducedPrice.toFixed(2); 
+    console.log(reducedPrice);
+    document.getElementById('price').innerHTML = "Il costo del biglietto sarà " + reducedPrice + "€";
 } else {
     fullPrice = "Spiacenti, non è previsto nessuno sconto";
     console.log(priceJourney);
-    document.getElementById('price').innerHTML = "Spiacenti, non è previsto nessuno sconto. Il costo del biglietto è " + priceJourney;
+    document.getElementById('price').innerHTML = "Spiacenti, non è previsto nessuno sconto. Il costo del biglietto è " + priceJourney + "€";
 }
 
 
